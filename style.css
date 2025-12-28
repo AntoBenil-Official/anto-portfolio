@@ -244,3 +244,126 @@ footer {
   background: white;
   font-size: 14px;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet and smaller desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
+}
+
+/* Tablets and Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 50px 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 100px 20px 60px;
+    /* More top padding for stacked navbar */
+  }
+
+  .hero-content {
+    padding-top: 20px;
+  }
+
+  .hero h1 {
+    margin-bottom: 15px;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  /* Grid adjustments */
+  .grid {
+    gap: 10px;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar nav {
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+    margin: 0 3px;
+    padding: 5px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    /* Explicit fallback for very small screens */
+  }
+
+  .cta-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .tech-stack-row {
+    gap: 15px;
+  }
+
+  .tech-stack-row span {
+    font-size: 0.85rem;
+  }
+
+  .tech-stack-row span::before {
+    display: none;
+    /* Remove bullets on small screens for better centering */
+  }
+
+  .tech-stack-row span {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 4px 10px;
+    border-radius: 4px;
+    /* Chip style for mobile */
+  }
+}
