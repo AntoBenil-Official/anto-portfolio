@@ -6,128 +6,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anto Benil | Senior Full-Stack .NET Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body class="dark-theme">
+  <!-- Glowing Background Orbs -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
 
-  <header class="navbar">
-    <div class="logo">Anto Benil<span>.</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="navbar glass">
+    <div class="logo">Anto Benil<span class="dot">.</span></div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="navMenu">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link btn-nav">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-background">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-    </div>
-    <div class="hero-content">
-      <h1 class="animate-up">Senior Full-Stack <span class="gradient-text">.NET Engineer</span></h1>
-      <p class="subtitle animate-up delay-1">
-        Designing, building, and maintaining scalable backend systems <br />
-        & modern web applications on Microsoft Azure
-      </p>
-      <div class="cta-group animate-up delay-2">
-        <a href="#contact" class="btn btn-primary">Hire Me</a>
-        <a href="#projects" class="btn btn-secondary">View Projects</a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content fade-in-up">
+        <div class="badge">Available for new opportunities</div>
+        <h1>Senior Full-Stack <br /><span class="gradient-text">.NET Engineer</span></h1>
+        <p class="subtitle mt-4">
+          Designing, building, and maintaining scalable backend systems <br class="hidden-mobile" />
+          & modern web applications on Microsoft Azure.
+        </p>
+        <div class="cta-group mt-8">
+          <a href="#contact" class="btn btn-glow">Hire Me</a>
+          <a href="#projects" class="btn btn-glass">View Projects</a>
+        </div>
+        <div class="tech-stack-row mt-12">
+          <div class="tech-pill">.NET 8</div>
+          <div class="tech-pill">Azure</div>
+          <div class="tech-pill">Kubernetes</div>
+          <div class="tech-pill">RabbitMQ</div>
+        </div>
       </div>
-      <div class="tech-stack-row animate-up delay-3">
-        <span>.NET 8</span>
-        <span>Azure</span>
-        <span>Kubernetes</span>
-        <span>RabbitMQ</span>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-container glass-card reveal">
+        <h2 class="section-title">About Me<span class="dot">.</span></h2>
+        <div class="about-content">
+          <p>
+            I am a Senior Full-Stack .NET Engineer with over six years of hands-on experience designing,
+            building, and maintaining scalable backend systems and modern web applications.
+            I specialize in ASP.NET Core, C#, and cloud-native development on Microsoft Azure,
+            focusing on clean architecture, maintainable code, and real-world performance.
+          </p>
+          <p class="mt-4">
+            I have extensive experience in healthcare and manufacturing domains, ensuring reliability, security,
+            and performance in enterprise-grade systems. I advocate for SOLID principles and enjoy collaborative
+            environments, code reviews, and mentoring.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a Senior Full-Stack .NET Engineer with over six years of hands-on experience designing,
-      building, and maintaining scalable backend systems and modern web applications.
-      I specialize in ASP.NET Core, C#, and cloud-native development on Microsoft Azure,
-      focusing on clean architecture, maintainable code, and real-world performance.
-    </p>
-    <p style="margin-top: 15px;">
-      I have extensive experience in healthcare and manufacturing domains, ensuring reliability, security,
-      and performance in enterprise-grade systems. I advocate for SOLID principles and enjoy collaborative
-      environments, code reviews, and mentoring.
-    </p>
-  </section>
-
-  <section id="skills" class="section light">
-    <h2>Skills</h2>
-    <div class="grid">
-      <span>ASP.NET Core</span>
-      <span>C#</span>
-      <span>Web API</span>
-      <span>Blazor (Server & WA)</span>
-      <span>Entity Framework Core</span>
-      <span>Dapper</span>
-      <span>SQL Server</span>
-      <span>Azure Key Services</span>
-      <span>Microservices</span>
-      <span>Docker</span>
-      <span>Kubernetes (AKS)</span>
-      <span>RabbitMQ</span>
-      <span>Azure AD/JWT</span>
-      <span>CI/CD (Azure DevOps)</span>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Senior Full-Stack .NET Engineer</h3>
-      <p>
-        Specializing in building RESTful Web APIs, microservices, and event-driven systems using RabbitMQ.
-        Proven track record in healthcare and manufacturing sectors, handling high-volume data, retry policies,
-        and distributed transactions.
-      </p>
-    </div>
-  </section>
-
-  <section id="services" class="section light">
-    <h2>Freelance Services</h2>
-    <div class="cards">
-      <div class="card">Scalable Backend Systems</div>
-      <div class="card">ASP.NET Core Web API & Microservices</div>
-      <div class="card">Azure Cloud Native Solutions</div>
-      <div class="card">Blazor Web Development</div>
-      <div class="card">Legacy .NET Migration</div>
-      <div class="card">Performance Optimization & Architecture</div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h4>Healthcare Management System</h4>
-        <p>Secure, role-based system with APIs, Blazor UI, and Azure deployment.</p>
+    <section id="skills" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Skills<span class="dot">.</span></h2>
+        <div class="skills-grid">
+          <div class="skill-card glass-card"><span>ASP.NET Core</span></div>
+          <div class="skill-card glass-card"><span>C#</span></div>
+          <div class="skill-card glass-card"><span>Web API</span></div>
+          <div class="skill-card glass-card"><span>Blazor (Server & WA)</span></div>
+          <div class="skill-card glass-card"><span>Entity Framework Core</span></div>
+          <div class="skill-card glass-card"><span>Dapper</span></div>
+          <div class="skill-card glass-card"><span>SQL Server</span></div>
+          <div class="skill-card glass-card"><span>Azure Key Services</span></div>
+          <div class="skill-card glass-card"><span>Microservices</span></div>
+          <div class="skill-card glass-card"><span>Docker</span></div>
+          <div class="skill-card glass-card"><span>Kubernetes (AKS)</span></div>
+          <div class="skill-card glass-card"><span>RabbitMQ</span></div>
+          <div class="skill-card glass-card"><span>Azure AD/JWT</span></div>
+          <div class="skill-card glass-card"><span>CI/CD (Azure DevOps)</span></div>
+        </div>
       </div>
-      <div class="card">
-        <h4>Manufacturing Integration Platform</h4>
-        <p>Microservices with RabbitMQ, AKS, and high-volume data processing.</p>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Experience<span class="dot">.</span></h2>
+        <div class="timeline">
+          <div class="timeline-item glass-card hover-glow">
+            <div class="timeline-dot"></div>
+            <h3>Senior Full-Stack .NET Engineer</h3>
+            <div class="timeline-date">Current</div>
+            <p class="mt-4 text-light">
+              Specializing in building RESTful Web APIs, microservices, and event-driven systems using RabbitMQ.
+              Proven track record in healthcare and manufacturing sectors, handling high-volume data, retry policies,
+              and distributed transactions.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Freelance Services<span class="dot">.</span></h2>
+        <div class="services-grid">
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">⚡</div>
+            <h3>Scalable Backend Systems</h3>
+          </div>
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">🔌</div>
+            <h3>ASP.NET Core Web API & Microservices</h3>
+          </div>
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">☁️</div>
+            <h3>Azure Cloud Native Solutions</h3>
+          </div>
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">💻</div>
+            <h3>Blazor Web Development</h3>
+          </div>
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">🔄</div>
+            <h3>Legacy .NET Migration</h3>
+          </div>
+          <div class="service-card glass-card hover-glow">
+            <div class="service-icon">🚀</div>
+            <h3>Performance Optimization & Architecture</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-container reveal">
+        <h2 class="section-title">Projects<span class="dot">.</span></h2>
+        <div class="projects-grid">
+          <div class="project-card glass-card hover-glow">
+            <div class="project-content">
+              <h4>Healthcare Management System</h4>
+              <p class="text-light mt-2">Secure, role-based system with APIs, Blazor UI, and Azure deployment.</p>
+            </div>
+            <div class="project-tags mt-4">
+              <span class="tag">Healthcare</span>
+              <span class="tag">Blazor</span>
+              <span class="tag">Azure</span>
+            </div>
+          </div>
+          <div class="project-card glass-card hover-glow">
+            <div class="project-content">
+              <h4>Manufacturing Integration Platform</h4>
+              <p class="text-light mt-2">Microservices with RabbitMQ, AKS, and high-volume data processing.</p>
+            </div>
+            <div class="project-tags mt-4">
+              <span class="tag">Microservices</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">AKS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-container glass-card reveal contact-card text-center">
+        <h2 class="section-title text-center">Contact<span class="dot">.</span></h2>
+        <p class="text-light mt-4 mb-8 max-w-2xl mx-auto">
+          Ready to build scalable systems? Reach out to me via email or connect on LinkedIn.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:antobenilofficial@gmail.com" class="btn btn-glow">
+            <span class="icon">✉️</span> antobenilofficial@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/anto-benil-48829a169" target="_blank" rel="noopener noreferrer"
+            class="btn btn-glass">
+            <span class="icon">💼</span> LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="footer-content">
+      <p>© 2026 Anto Benil. All rights reserved.</p>
+      <div class="footer-motto">Built with clean architecture in mind.</div>
     </div>
-  </section>
-
-  <section id="contact" class="section light">
-    <h2>Contact</h2>
-    <p>Email: antobenilofficial@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/anto-benil-48829a169</p>
-  </section>
-
-  <footer>
-    © 2026 Anto Benil. All rights reserved.
   </footer>
 
   <script src="script.js"></script>
