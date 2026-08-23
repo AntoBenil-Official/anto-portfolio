@@ -1,31 +1,31 @@
 # Anto Benil - Portfolio
 
-Welcome to the personal portfolio website of **Anto Benil**, a Senior .NET Engineer specializing in building scalable, clean, and cloud-ready backend systems.
+Personal portfolio website of **Anto Benil**, a Senior Software Engineer specializing in Azure &amp; full-stack .NET, cloud-native apps, microservices, and DevOps.
 
-## 🚀 About the Project
+## About the Project
 
-This project is a responsive personal portfolio website designed to showcase professional experience, skills, and services. It features a clean, modern user interface built with semantic HTML5, CSS3, and vanilla JavaScript.
+A modern, minimal single-page portfolio built with semantic HTML5, CSS3, and vanilla JavaScript — inspired by clean developer-tool sites (Linear/Vercel-style), with a dark theme, subtle dot-grid background, and scroll-reveal animations.
 
-## ✨ Features
+## Features
 
-- **Responsive Design**: optimized for desktop, tablet, and mobile devices.
-- **Smooth Navigation**: Single-page application feel with smooth scrolling to sections.
-- **Modern UI**: Clean typography and layout using Inter font and variable-based CSS.
+- **Responsive design**: optimized for desktop, tablet, and mobile.
+- **Smooth navigation**: single-page feel with smooth scrolling and a mobile slide-down menu.
+- **Modern UI**: Inter + JetBrains Mono typography, restrained color palette, no heavy effects.
 - **Sections**:
-  - **About**: Professional summary.
-  - **Skills**: Technical expertise including ASP.NET Core, Azure, and Microservices.
-  - **Experience**: Career highlights.
-  - **Services**: Freelance offerings.
-  - **Projects**: Showcase of recent work.
-  - **Contact**: Social links and email.
+  - **About**: professional summary.
+  - **Experience**: full career timeline from earliest role to current.
+  - **Skills**: grouped by Backend, Frontend, Architecture, Messaging & Cloud, and DevOps & Quality.
+  - **Projects**: highlighted work across manufacturing, healthcare, and integration platforms.
+  - **Certifications & Education**: credentials and degree.
+  - **Contact**: email and LinkedIn.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-- **HTML5**: Semantic structure.
-- **CSS3**: Custom styling with Flexbox and Grid.
-- **JavaScript**: Interactive elements and behaviors.
+- **HTML5** — semantic structure.
+- **CSS3** — custom properties, Flexbox and Grid, no external UI framework.
+- **JavaScript** — mobile nav toggle and IntersectionObserver-based scroll reveal.
 
-## 📦 How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
@@ -37,6 +37,6 @@ This project is a responsive personal portfolio website designed to showcase pro
    ```
 3. Open `index.html` in your preferred web browser.
 
-## 📄 License
+## License
 
 © 2026 Anto Benil. All rights reserved.
